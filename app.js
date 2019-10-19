@@ -13,7 +13,7 @@ app.use(cors({ origin: ['http://localhost:3000', 'https://curnonwatch.herokuapp.
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-mongoose.connect("mongodb://localhost/curnonwatch", (err) => {
+mongoose.connect("mongodb://admin:123456abc@ds115971.mlab.com:15971/curnonwatch", (err) => {
     if (err) console.log(err);
     else console.log("Database connect Successfully");
 });
